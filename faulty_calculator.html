@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faulty Calculator</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+        }
+        .items{
+            border: 2px solid rgb(231, 224, 224);
+            border-radius: 10px;
+            padding: 10px 20px;
+            width: 600px;
+            text-align: center;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="items">
+        <h1> The Below calculator give you 10% time wrong answers </h1>
+        Enter first number : <input type="text" id="num1" placeholder="number"><br>
+        Enter Operation : <input type="text" id="operation" placeholder=" +, - x, /"><br>
+        Enter first number : <input type="text" id="num2" placeholder="number"><br><br><br>
+        <button onclick="getanser()">Answer</button>
+        <h1 id="answer"></h1>
+    </div>
+    
+    <script src="faulty_Calculator.js"></script>
+</body>
+</html>
