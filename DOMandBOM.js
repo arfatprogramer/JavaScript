@@ -29,10 +29,15 @@ let query =document.querySelectorAll(".box");
     
 // }
 
-let colors=["red",'pink','blue',"orange",'green','vilote','white','purple'];
 const randomColors=()=>{
-    let c=Math.floor(Math.random()*10);
-    return colors[c];
+    let r=0+Math.floor(Math.random()*255);
+    let b=0+Math.floor(Math.random()*255);
+    let a=0+Math.floor(Math.random()*255);
+
+console.log(r,b,a);
+
+
+    return `rgb(${r},${b},${a})`;
     
 }
 
