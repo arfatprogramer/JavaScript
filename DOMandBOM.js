@@ -13,7 +13,7 @@
     
 // // });
 // let clas= document.getElementsByClassName("box");
-let query =document.querySelectorAll(".box");
+
 
 
 // query.forEach(element => {
@@ -33,14 +33,8 @@ const randomColors=()=>{
     let r=0+Math.floor(Math.random()*255);
     let b=0+Math.floor(Math.random()*255);
     let a=0+Math.floor(Math.random()*255);
-
-console.log(r,b,a);
-
-
     return `rgb(${r},${b},${a})`;
-    
 }
-
 
 let btn=document.querySelector('#btn');
 console.log(btn);
@@ -48,7 +42,10 @@ btn.style.margin='2px auto';
 btn.style.display='block'
 
 btn.addEventListener('click',()=>{
+    let query =document.querySelectorAll(".box");
     query.forEach(e=>{
         e.style.backgroundColor=randomColors();
     })
 })
+document.designMode='on'
+

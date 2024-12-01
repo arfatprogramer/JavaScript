@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card Exercise</title>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <script>
+        function creatCard(src){
+            let containe=document.querySelector(".container");
+                let cstyle=containe.style;
+                cstyle.border='2px solid black'
+                cstyle.display='flex'
+
+                      
+
+                cstyle.borderRadius='10px'
+
+            const card=document.createElement("div")
+
+            let img=document.createElement('img')
+                img.src=src;
+
+                
+
+
+               
+
+                console.log(containe);
+                containe.appendChild(card)
+                card.appendChild(img)
+                
+        }
+        creatCard("https://i.ytimg.com/vi/KtL-SQ20Q0s/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLABJhdIBqlilwXKzJqa6StynbJT4Q");
+    </script>
+</body>
+</html>
